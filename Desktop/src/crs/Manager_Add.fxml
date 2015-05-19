@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="671.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crs.Manager_AddController">
+  <children>
+    <Pane id="addPane" layoutX="4.0" layoutY="-2.0" prefHeight="414.0" prefWidth="671.0">
+      <children>
+        <TextField fx:id="input_addName" layoutX="406.0" layoutY="189.0" prefWidth="147.0" text="" />
+        <Button fx:id="addButton" layoutX="248.0" layoutY="322.0" mnemonicParsing="false" onAction="#addVehicle" prefHeight="31.0" prefWidth="158.0" text="Add" />
+        <ComboBox id="location" fx:id="dropLocation_add" layoutX="235.0" layoutY="118.0" prefHeight="31.0" prefWidth="171.0" promptText="Select Location" />
+        <ComboBox id="location" fx:id="dropCategory_add" layoutX="360.0" layoutY="42.0" prefHeight="31.0" prefWidth="165.0" promptText="Select Category" />
+        <Label layoutX="563.0" layoutY="191.0" text="Name">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.600" green="0.600" red="0.600" fx:id="x2" />
+          </textFill>
+        </Label>
+        <ComboBox fx:id="dropVType_add" layoutX="102.0" layoutY="42.0" minHeight="15.240234375" onAction="#onVtype" prefHeight="31.0" prefWidth="171.0" promptText="Select VType">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="项 1" />
+              <String fx:value="项 2" />
+              <String fx:value="项 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Label font="$x1" layoutX="23.0" layoutY="190.0" text="Vlicense" textFill="$x2" />
+        <TextField id="input_addName" fx:id="input_addVlicense" layoutX="95.0" layoutY="188.0" prefWidth="147.0" text="" />
+        <Label font="$x1" layoutX="47.0" layoutY="246.0" prefWidth="34.0" text="Year" textFill="$x2" />
+        <TextField id="input_addPlate" fx:id="input_addYear" layoutX="95.0" layoutY="241.0" prefWidth="147.0" text="" />
+        <Label font="$x1" layoutX="566.0" layoutY="246.0" text="Price" textFill="$x2" />
+        <TextField id="input_addName" fx:id="inpute_addInitialPrice" layoutX="406.0" layoutY="241.0" prefWidth="147.0" text="" />
+        <Label fx:id="alert_add" layoutX="245.0" layoutY="375.0" prefHeight="21.0" prefWidth="158.0" text="" visible="true" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

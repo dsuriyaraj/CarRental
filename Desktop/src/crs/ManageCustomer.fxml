@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="1057.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ManageCustomerController">
+   <children>
+      <Separator layoutX="390.0" layoutY="49.0" orientation="VERTICAL" prefHeight="303.0" prefWidth="4.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb71e" height="200.0" layoutY="76.0" stroke="WHITE" strokeType="INSIDE" width="26.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb71e" height="200.0" layoutX="1031.0" layoutY="76.0" stroke="WHITE" strokeType="INSIDE" width="26.0" />
+      <Button layoutX="142.0" layoutY="113.0" mnemonicParsing="false" onAction="#LoadRegisterCustomer" style="-fx-background-color: #fbfbfb; -fx-border-color: #F8F8F8;" styleClass="menu-side-bar" text="Register Customer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="146.0" layoutY="217.0" mnemonicParsing="false" onAction="#LoadClubMember" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #fbfbfb; -fx-border-color: #F8F8F8;" styleClass="menu-side-bar" text="Club Member">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Pane fx:id="contentpane_managecustomer" layoutX="439.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="439.0" />
+      <Label layoutX="142.0" layoutY="144.0" prefHeight="21.0" prefWidth="196.0" text=" Register a new customer" textFill="#999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="248.0" prefHeight="20.0" prefWidth="196.0" text=" Make customer club member" textFill="#999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="41.0" layoutX="95.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="95.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/add-club-member.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

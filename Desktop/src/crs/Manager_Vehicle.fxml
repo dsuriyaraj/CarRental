@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="413.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Manager_VehicleController">
+  <children>
+    <Pane layoutX="210.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" />
+    <Pane fx:id="main_pane" layoutX="171.0" layoutY="13.0" prefHeight="387.0" prefWidth="877.0">
+      <children>
+        <Pane id="main_pane_tosell" fx:id="main_pane_add" layoutX="209.0" layoutY="36.0" prefHeight="146.0" prefWidth="147.0" />
+        <Pane id="main_pane_setrate" fx:id="main_pane_tosell" layoutX="7.0" layoutY="36.0" prefHeight="128.0" prefWidth="127.0" />
+        <Pane id="main_pane_report" fx:id="main_pane_sold" layoutX="134.0" layoutY="219.0" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </Pane>
+      <Pane prefHeight="413.0" prefWidth="155.0" style="-fx-background-color: black;" styleClass="manager_sidebar_black" stylesheets="/inc/managerscreen1.css">
+         <children>
+          <Button layoutX="1.0" layoutY="67.0" mnemonicParsing="false" onAction="#gotoSell" prefHeight="54.0" prefWidth="154.0" styleClass="manager_sidebar_black" text="Sell vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+          <Button layoutY="159.0" mnemonicParsing="false" onAction="#gotoSellOut" prefHeight="54.0" prefWidth="154.0" style="-: black;" styleClass="manager_sidebar_black" text="Sell out vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+          <Button id="gotoAdd" layoutX="1.0" layoutY="240.0" mnemonicParsing="false" onAction="#gotoAdd" prefHeight="54.0" prefWidth="153.0" styleClass="manager_sidebar_black" text="Add vehicle" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+  </children>
+</AnchorPane>

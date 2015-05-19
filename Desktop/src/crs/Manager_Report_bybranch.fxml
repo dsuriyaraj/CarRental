@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="415.0" prefHeight="415.0" prefWidth="687.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crs.Manager_Report_bybranchController">
+  <children>
+    <DatePicker fx:id="report_datepicker" layoutX="80.0" layoutY="26.0" onAction="#onChangeDate" />
+    <TableView fx:id="table_vehicle" layoutX="85.0" layoutY="168.0" prefHeight="221.0" prefWidth="495.0" />
+    <Button fx:id="button_download" layoutX="332.0" layoutY="74.0" mnemonicParsing="false" onAction="#onDownload" prefHeight="31.0" prefWidth="165.0" text="Download report" />
+    <ComboBox fx:id="combo_loc" layoutX="329.0" layoutY="26.0" prefHeight="31.0" prefWidth="171.0" promptText="Branch Location">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <BarChart layoutX="-8.0" layoutY="331.0" prefHeight="221.0" prefWidth="333.0" visible="false">
+      <xAxis>
+        <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis side="LEFT" />
+      </yAxis>
+    </BarChart>
+    <Button layoutX="79.0" layoutY="74.0" mnemonicParsing="false" onAction="#onView" prefHeight="31.0" prefWidth="92.0" text="View list" />
+    <Button layoutX="195.0" layoutY="74.0" mnemonicParsing="false" onAction="#onSummary" prefHeight="31.0" prefWidth="116.0" text="View Summary" />
+    <Label layoutX="94.0" layoutY="132.0" text="Total" textFill="#4a4545">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+    <TextField fx:id="totalField" editable="false" layoutX="159.0" layoutY="127.0" prefHeight="31.0" prefWidth="144.0" />
+    <Pane fx:id="pane_summary" layoutX="79.0" layoutY="168.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+      <children>
+        <TableView fx:id="table_bycategory" layoutX="7.0" layoutY="0.0" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </Pane>
+    <Label fx:id="label_result" layoutX="489.0" layoutY="89.0" text="Label" visible="false" />
+  </children>
+</AnchorPane>

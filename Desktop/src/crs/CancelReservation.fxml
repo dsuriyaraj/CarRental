@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="385.0" style="-fx-background-color: #F8D85A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.CancelReservationController">
+   <children>
+      <Label layoutX="14.0" layoutY="20.0" text="Cancel Reservation" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Separator layoutX="14.0" layoutY="52.0" prefWidth="200.0" />
+      <ComboBox fx:id="choice_cancel" layoutX="14.0" layoutY="83.0" onAction="#Toggle" prefHeight="31.0" prefWidth="170.0" />
+      <TextField fx:id="confirmationnumber" layoutX="14.0" layoutY="134.0" prefHeight="31.0" prefWidth="170.0" promptText="Confirmation no" />
+      <Button fx:id="button" layoutX="192.0" layoutY="134.0" mnemonicParsing="false" onAction="#DeleteReservation" prefHeight="31.0" prefWidth="150.0" style="-fx-border-color: yellow;" text="Cancel Reservation" />
+      <Pane fx:id="content_cancelreservation" layoutX="14.0" layoutY="165.0" prefHeight="132.0" prefWidth="242.0">
+         <children>
+            <Label layoutX="7.0" layoutY="4.0" text="Phone" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ds1" layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="45.0" />
+            <TextField fx:id="ds2" layoutX="110.0" layoutY="1.0" prefHeight="31.0" prefWidth="54.0" />
+            <TextField fx:id="ds3" layoutX="164.0" layoutY="1.0" prefHeight="31.0" prefWidth="54.0" />
+            <DatePicker fx:id="from" layoutX="65.0" layoutY="45.0" prefHeight="31.0" prefWidth="150.0" promptText="From" />
+            <DatePicker fx:id="to" layoutX="65.0" layoutY="87.0" prefHeight="31.0" prefWidth="150.0" promptText="To" />
+            <Separator layoutY="129.0" prefHeight="3.0" prefWidth="242.0" />
+         </children>
+      </Pane>
+      <Label fx:id="message" layoutX="14.0" layoutY="297.0" prefHeight="21.0" prefWidth="178.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

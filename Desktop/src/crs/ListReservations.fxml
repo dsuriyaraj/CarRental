@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ListReservationsController">
+   <children>
+      <TableView fx:id="table_reservationcustomer" layoutX="20.0" layoutY="14.0" prefHeight="184.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="Confno" prefWidth="75.0" text="Confno" />
+          <TableColumn fx:id="Vtypename" prefWidth="115.0" text="Vtype_name" />
+            <TableColumn fx:id="Vlicense" prefWidth="113.0" text="Vlicense" />
+            <TableColumn fx:id="Branchid" prefWidth="118.0" text="BranchID" />
+            <TableColumn fx:id="Pickup" prefWidth="102.0" text="PickUp" />
+            <TableColumn fx:id="Dropoff" prefWidth="140.0" text="DropOff" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="20.0" layoutY="218.0" prefHeight="21.0" prefWidth="161.0" />
+   </children>
+</Pane>

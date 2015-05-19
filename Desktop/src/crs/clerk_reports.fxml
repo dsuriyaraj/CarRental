@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="1057.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Clerk_ReportsController">
+   <children>
+      <Button layoutX="111.0" layoutY="82.0" mnemonicParsing="false" onAction="#LoadAvailableVehicles" styleClass="menu-side-bar" text="Available Vehicles">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="111.0" layoutY="184.0" mnemonicParsing="false" onAction="#LoadOverdue" prefHeight="31.0" prefWidth="151.0" styleClass="menu-side-bar" text="Overdue Vehicles">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="115.0" layoutY="277.0" mnemonicParsing="false" onAction="#LoadForSaleVehicles" prefHeight="31.0" prefWidth="147.0" styleClass="menu-side-bar" text="For Sale Vehicles">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Separator layoutX="341.0" layoutY="36.0" orientation="VERTICAL" prefHeight="340.0" prefWidth="7.0" />
+      <Pane fx:id="content_report" layoutX="348.0" layoutY="5.0" prefHeight="406.0" prefWidth="704.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc51f" height="271.0" layoutY="64.0" stroke="#fffdfd" strokeType="INSIDE" width="24.0" />
+      <Label layoutX="111.0" layoutY="119.0" prefHeight="21.0" prefWidth="212.0" styleClass="button-explanation" text="Available vehicles by timeframe" />
+      <Label layoutX="111.0" layoutY="221.0" styleClass="button-explanation" text="Vehicles not returned to date" />
+      <Label layoutX="115.0" layoutY="314.0" styleClass="button-explanation" text="Shows vehicles for sale" />
+      <ImageView fitHeight="59.0" fitWidth="62.0" layoutX="42.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="67.0" layoutX="40.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="65.0" layoutX="45.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/sale.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

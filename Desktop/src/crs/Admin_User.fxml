@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="1057.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Admin_UserController">
+  <children>
+    <Button layoutX="115.0" layoutY="215.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #fbfbfb; -fx-border-color: #F8F8F8;" styleClass="menu-side-bar" text="Add User">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+    <Button layoutX="114.0" layoutY="94.0" mnemonicParsing="false" onAction="#onManage" style="-fx-background-color: #fbfbfb; -fx-border-color: F8F8F8;" styleClass="menu-side-bar" text="Manage User">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+    <Pane fx:id="main_pane" layoutX="337.0" layoutY="43.0" prefHeight="298.0" prefWidth="436.0">
+      <children>
+        <Pane fx:id="main_pane_add" layoutX="10.0" layoutY="14.0" prefHeight="129.0" prefWidth="159.0" />
+        <Pane fx:id="main_pane_manage" layoutX="183.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </Pane>
+      <ImageView fitHeight="68.0" fitWidth="59.0" layoutX="44.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/manage-users.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="59.0" layoutX="51.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/add-new-account.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="134.0" styleClass="button-explanation" text="Remove or reset password" />
+      <Label layoutX="115.0" layoutY="257.0" styleClass="button-explanation" text="Add a new user in database" />
+      <Separator layoutX="331.0" layoutY="53.0" orientation="VERTICAL" prefHeight="277.0" prefWidth="6.0" />
+  </children>
+</AnchorPane>

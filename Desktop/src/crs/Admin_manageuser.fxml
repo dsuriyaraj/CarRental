@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Admin_manageuserController">
+  <children>
+    <TableView fx:id="table_user" layoutX="66.0" layoutY="62.0" prefHeight="279.0" prefWidth="353.0" />
+    <Button fx:id="resetButton" layoutX="633.0" layoutY="146.0" mnemonicParsing="false" onAction="#onSetpw" text="reset" />
+    <TextField fx:id="newpassword" layoutX="460.0" layoutY="146.0" prefWidth="173.0" />
+    <Button fx:id="removeButton" layoutX="460.0" layoutY="210.0" mnemonicParsing="false" onAction="#onRemove" text="Remove Selected User" />
+    <Label fx:id="result1" layoutX="460.0" layoutY="180.0" prefHeight="24.0" prefWidth="217.0" text="" visible="true" />
+    <Label fx:id="result2" layoutX="460.0" layoutY="253.0" prefHeight="23.000099999997474" prefWidth="126.00009999999747" text="" visible="true" />
+    <Label layoutX="460.0" layoutY="125.0" text="Reset password" textFill="#655f5f">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+    <Pane fx:id="dialogpane" layoutX="14.0" layoutY="394.0" prefHeight="129.0" prefWidth="217.0" visible="true">
+      <children>
+        <Button fx:id="okbutton" layoutX="66.0" layoutY="80.0" mnemonicParsing="false" text="OK" />
+        <Button fx:id="cancelbutton" layoutX="134.0" layoutY="80.0" mnemonicParsing="false" text="Cancel" />
+        <Label layoutX="-2.0" layoutY="34.0" text="Are you sure to remove this user?" />
+      </children>
+    </Pane>
+    <TextField fx:id="keyword" layoutX="66.0" layoutY="16.0" prefWidth="178.0" promptText="key words" text="" />
+    <Button layoutX="244.0" layoutY="16.0" mnemonicParsing="false" onAction="#onsearch" text="Search" />
+  </children>
+</AnchorPane>

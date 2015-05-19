@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Clerk_ForSaleVehiclesController">
+   <children>
+      <TableView fx:id="table_forsale" layoutX="73.0" layoutY="90.0" prefHeight="200.0" prefWidth="527.0">
+        <columns>
+          <TableColumn fx:id="Location" prefWidth="153.0" text="Location" />
+            <TableColumn fx:id="Type" prefWidth="130.0" text="Category" />
+            <TableColumn fx:id="Vlicense" prefWidth="105.0" text="Vlicense" />
+            <TableColumn fx:id="Price" prefWidth="138.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="512.0" layoutY="310.0" mnemonicParsing="false" onAction="#Populate_Table" prefHeight="31.0" prefWidth="88.0" text="List" />
+      <ComboBox fx:id="_location" layoutX="73.0" layoutY="40.0" prefHeight="31.0" prefWidth="174.0" promptText="Select Location" />
+      <ComboBox fx:id="vehicletype" layoutX="272.0" layoutY="40.0" prefHeight="31.0" prefWidth="157.0" promptText="Select Category" />
+   </children>
+</Pane>

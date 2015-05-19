@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Clerk_AvailableVehiclesController">
+   <children>
+      <TableView fx:id="table_available_vehicles" layoutX="73.0" layoutY="159.0" prefHeight="200.0" prefWidth="527.0">
+        <columns>
+          <TableColumn fx:id="Location" prefWidth="143.0" text="Location" />
+            <TableColumn fx:id="Name" prefWidth="133.0" text="Name" />
+            <TableColumn fx:id="Type" prefWidth="154.0" text="Type" />
+            <TableColumn fx:id="Vlicense" prefWidth="96.0" text="License" />
+        </columns>
+      </TableView>
+      <Button layoutX="613.0" layoutY="328.0" mnemonicParsing="false" onAction="#Populate_Table" prefHeight="31.0" prefWidth="72.0" text="List" />
+      <Label fx:id="message" layoutX="73.0" layoutY="365.0" prefHeight="21.0" prefWidth="340.0" />
+      <ComboBox fx:id="_location" layoutX="73.0" layoutY="41.0" prefHeight="31.0" prefWidth="180.0" promptText="Select Location" />
+      <ComboBox fx:id="vehicletype" layoutX="73.0" layoutY="91.0" prefHeight="31.0" prefWidth="180.0" promptText="Select Category" />
+      <DatePicker fx:id="From" layoutX="279.0" layoutY="41.0" prefHeight="31.0" prefWidth="143.0" promptText="From" />
+      <DatePicker fx:id="To" layoutX="279.0" layoutY="91.0" prefHeight="31.0" prefWidth="143.0" promptText="To" />
+      <ComboBox fx:id="hh1" layoutX="432.0" layoutY="41.0" prefHeight="31.0" prefWidth="72.0" promptText="hh" />
+      <ComboBox fx:id="hh2" layoutX="432.0" layoutY="91.0" prefHeight="31.0" prefWidth="72.0" promptText="hh" />
+      <ComboBox fx:id="mm1" layoutX="513.0" layoutY="41.0" prefHeight="31.0" prefWidth="79.0" promptText="mm" />
+      <ComboBox fx:id="mm2" layoutX="513.0" layoutY="91.0" prefHeight="31.0" prefWidth="79.0" promptText="mm" />
+   </children>
+</Pane>

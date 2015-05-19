@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="440.0" style="-fx-background-color: #999;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ClubMemberController">
+   <children>
+      <Label layoutX="7.0" layoutY="4.0" prefHeight="28.0" prefWidth="151.0" text="   Membership" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cust_name_m" layoutX="14.0" layoutY="59.0" prefHeight="31.0" prefWidth="226.0" promptText="Full Name" />
+      <TextField fx:id="location_m" layoutX="79.0" layoutY="123.0" prefHeight="31.0" prefWidth="162.0" promptText="Location" />
+      <TextField fx:id="city_m" layoutX="248.0" layoutY="123.0" prefHeight="31.0" prefWidth="82.0" promptText="City" />
+      <Label layoutX="14.0" layoutY="128.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="276.0" layoutY="300.0" mnemonicParsing="false" onAction="#Submit" style="-fx-background-color: #F3F3F3; -fx-border-color: #F3F3F3;" text="Register" />
+      <Label fx:id="membership_status" layoutX="11.0" layoutY="305.0" prefHeight="21.0" prefWidth="179.0" textFill="WHITE" />
+      <Button layoutX="212.0" layoutY="300.0" mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: #F3F3F3; -fx-border-color: #F3F3F3;" text="Reset" />
+      <DatePicker fx:id="date_membership" layoutX="79.0" layoutY="184.0" prefHeight="31.0" prefWidth="162.0" />
+      <Label layoutX="14.0" layoutY="189.0" prefHeight="21.0" prefWidth="43.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="20.0" layoutY="267.0" prefHeight="2.0" prefWidth="323.0" />
+   </children>
+</Pane>

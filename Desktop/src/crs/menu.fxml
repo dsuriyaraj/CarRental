@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="1050.0" style="-fx-background-color: white;" stylesheets="/inc/menu.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crs.MenuController">
+  <children>
+    <Pane fx:id="content_pane" layoutY="89.0" prefHeight="417.0" prefWidth="1050.0" style="-fx-background-color: #fbfbfb;" stylesheets="/inc/menu.css" />
+    <ImageView fitHeight="34.0" fitWidth="49.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../inc/logo.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="77.0" layoutY="13.0" text="CRS" textFill="#726d6d">
+      <font>
+        <Font name="System Bold Italic" size="25.0" />
+      </font>
+    </Label>
+    <Separator layoutX="133.0" layoutY="18.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="6.0" />
+    <Label layoutX="143.0" layoutY="21.0" text="Rentals simplified">
+      <font>
+        <Font name="System Italic" size="15.0" />
+      </font>
+    </Label>
+    <Button layoutX="319.0" layoutY="30.0" mnemonicParsing="false" onAction="#LoadRentReserver" styleClass="button-menu-bar" text="Book Car" />
+    <Separator layoutX="3.0" layoutY="87.0" prefHeight="4.0" prefWidth="1050.0" />
+    <Button layoutX="434.0" layoutY="31.0" mnemonicParsing="false" onAction="#LoadMangeCustomer" styleClass="button-menu-bar" text="Manage Customer" />
+    <Button layoutX="611.0" layoutY="31.0" mnemonicParsing="false" onAction="#LoadManageReservation" styleClass="button-menu-bar" text="Manage Reservation" />
+    <Button layoutX="791.0" layoutY="32.0" mnemonicParsing="false" onAction="#LoadProcessReturn" styleClass="button-menu-bar" text="Process Return" />
+    <Button layoutX="611.0" layoutY="59.0" mnemonicParsing="false" onAction="#LoadReports" styleClass="button-menu-bar" text="Reports" />
+    <Pane layoutY="506.0" prefHeight="63.0" prefWidth="1050.0" style="-fx-background-color: white;">
+      <children>
+        <Label layoutX="14.0" layoutY="8.0" prefHeight="21.0" prefWidth="118.0" text="Product Status :" textFill="#bcb7b7">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Label>
+        <Label layoutX="132.0" layoutY="8.0" text="Activated" />
+        <Label layoutX="870.0" layoutY="8.0" prefHeight="21.0" prefWidth="155.0" text="\@Copyright 2015 CRS  " />
+      </children>
+    </Pane>
+    <Button layoutX="309.0" layoutY="60.0" mnemonicParsing="false" onAction="#LoadManageVehicle" text="Manage Vehicle" />
+    <Button layoutX="450.0" layoutY="60.0" mnemonicParsing="false" onAction="#LoadRate" text="Manage rate" />
+    <Button layoutX="791.0" layoutY="61.0" mnemonicParsing="false" onAction="#LoadUser" text="Manage User" />
+  </children>
+</Pane>

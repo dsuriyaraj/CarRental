@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.Manager_ReportController">
+  <children>
+    <Pane fx:id="main_pane" layoutX="59.0" layoutY="12.0" prefHeight="423.0" prefWidth="640.0">
+      <children>
+        <Pane fx:id="pane_daily" layoutX="86.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" />
+        <Pane fx:id="pane_daily_bybranch" layoutX="367.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" />
+        <Pane fx:id="pane_dailyreturn" layoutX="41.0" layoutY="223.0" prefHeight="200.0" prefWidth="200.0" />
+        <Pane fx:id="pane_dailyreturn_bybranch" layoutX="355.0" layoutY="223.0" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </Pane>
+      <Pane layoutX="849.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="208.0" style="-fx-background-color: black;">
+         <children>
+          <Button fx:id="button2" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gotoDailyBybranch" prefHeight="35.0" prefWidth="207.0" text="Daily Rental by branch" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+          <Button fx:id="button3" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gotoReturn" prefHeight="35.0" prefWidth="207.0" styleClass="manager_sidebar_black" text="Daily Return" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+          <Button fx:id="button4" layoutY="284.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#gotoReturnBybranch" prefHeight="35.0" prefWidth="207.0" text="Daily return by branch" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Rectangle fx:id="button1" arcHeight="5.0" arcWidth="5.0" height="41.0" layoutY="80.0" onMouseClicked="#gotoDaily" stroke="BLACK" strokeType="INSIDE" width="207.0" />
+            <Label layoutX="52.0" layoutY="87.0" text="Daily Rental" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+  </children>
+</AnchorPane>

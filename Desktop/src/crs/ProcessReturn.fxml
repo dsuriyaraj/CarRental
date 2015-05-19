@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ProcessReturnController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffcb05" height="200.0" layoutX="1.0" layoutY="94.0" stroke="WHITE" strokeType="INSIDE" width="31.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffcb05" height="200.0" layoutX="1025.0" layoutY="94.0" stroke="WHITE" strokeType="INSIDE" width="31.0" />
+      <Label layoutX="131.0" layoutY="50.0" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: black;" text=" Rental Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="choice_rental_id" layoutX="93.0" layoutY="121.0" onAction="#Toggle" prefHeight="31.0" prefWidth="167.0" />
+      <Separator layoutX="407.0" layoutY="107.0" orientation="VERTICAL" prefHeight="200.0" />
+      <TextField fx:id="rental_id" layoutX="93.0" layoutY="176.0" prefHeight="31.0" prefWidth="167.0" promptText="Rental Number" />
+      <Button fx:id="button_rid" layoutX="270.0" layoutY="176.0" mnemonicParsing="false" onAction="#LocateRecord" text="Locate Record" />
+      <Pane fx:id="content_processreturn_section1" layoutX="93.0" layoutY="218.0" prefHeight="123.0" prefWidth="272.0">
+         <children>
+            <Label layoutY="4.0" text="Phone" textFill="#979292">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ds1" layoutX="56.0" layoutY="1.0" prefHeight="6.0" prefWidth="45.0" />
+            <TextField fx:id="ds2" layoutX="107.0" layoutY="1.0" prefHeight="31.0" prefWidth="57.0" />
+            <TextField fx:id="ds3" layoutX="171.0" layoutY="1.0" prefHeight="31.0" prefWidth="57.0" />
+            <DatePicker fx:id="from" layoutX="55.0" layoutY="43.0" prefHeight="31.0" prefWidth="174.0" promptText="Pickup Date" />
+            <DatePicker fx:id="to" layoutX="55.0" layoutY="88.0" prefHeight="31.0" prefWidth="174.0" promptText="Dropoff Date" />
+         </children>
+      </Pane>
+      <Label fx:id="message1" layoutX="93.0" layoutY="378.0" prefHeight="21.0" prefWidth="225.0">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="473.0" layoutY="50.0" prefHeight="25.0" prefWidth="213.0" style="-fx-background-color: black;" text=" Costs" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <DatePicker fx:id="return_date" layoutX="439.0" layoutY="121.0" prefHeight="31.0" prefWidth="180.0" promptText="Return Date" />
+      <ComboBox fx:id="hh" layoutX="628.0" layoutY="121.0" prefHeight="31.0" prefWidth="72.0" promptText="hh" />
+      <ComboBox fx:id="mm" layoutX="707.0" layoutY="121.0" prefHeight="31.0" prefWidth="80.0" promptText="mm" />
+      <Pane fx:id="pane_clubmember" layoutX="439.0" layoutY="170.0" prefHeight="31.0" prefWidth="351.0">
+         <children>
+            <Label layoutY="4.0" text="Total Points  :" textFill="#bcafaf">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="member_points" layoutX="100.0" layoutY="4.0" prefHeight="21.0" prefWidth="80.0" />
+            <Label layoutX="187.0" layoutY="4.0" text="Use Points" textFill="#bcafaf">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="use_points" layoutX="271.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="80.0" text="0" />
+         </children>
+      </Pane>
+      <Label fx:id="message2" layoutX="436.0" layoutY="378.0" prefHeight="21.0" prefWidth="351.0">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Pane fx:id="content_processreturn_section2" layoutX="442.0" layoutY="186.0" prefHeight="86.0" prefWidth="225.0">
+         <children>
+            <Button layoutY="51.0" mnemonicParsing="false" onAction="#TotalCost" text="Total Cost" />
+            <Label fx:id="estimated_cost" layoutX="105.0" layoutY="56.0" prefHeight="21.0" prefWidth="106.0" />
+            <Label layoutY="4.0" text="Odometer" textFill="#a19a9a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reading_odometer" layoutX="105.0" layoutY="-1.0" prefHeight="31.0" prefWidth="114.0" />
+         </children>
+      </Pane>
+      <Button fx:id="button_continue" layoutX="890.0" layoutY="307.0" mnemonicParsing="false" onAction="#Load_ReturnConfirmation" prefHeight="31.0" prefWidth="97.0" text="Continue" />
+      <Separator layoutX="814.0" layoutY="107.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Label layoutX="854.0" layoutY="50.0" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: black;" text="  Finalize" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="combo_tankfull" layoutX="831.0" layoutY="155.0" prefWidth="150.0" />
+      <Label layoutX="831.0" layoutY="126.0" text="Tank full" textFill="#8a8686">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="94.0" layoutY="50.0" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: #FFCB05;">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/chevron-right-3x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="436.0" layoutY="50.0" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: #FFCB05;">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/chevron-right-3x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="820.0" layoutY="50.0" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: #FFCB05;">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/chevron-right-3x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="385.0" style="-fx-background-color: #999;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.RentViaReservationController">
+   <children>
+      <Label layoutX="7.0" layoutY="21.0" text="Rent via Reservation" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="53.0" prefHeight="3.0" prefWidth="367.0" />
+      <ComboBox fx:id="phone_confno" layoutX="4.0" layoutY="78.0" onAction="#Toggle" prefWidth="150.0" />
+      <Label fx:id="phone_label" layoutX="7.0" layoutY="129.0" text="Phone" textFill="#fffdfd" />
+      <TextField fx:id="ds1" layoutX="61.0" layoutY="124.0" prefHeight="31.0" prefWidth="50.0" />
+      <TextField fx:id="ds2" layoutX="114.0" layoutY="124.0" prefHeight="31.0" prefWidth="50.0" />
+      <TextField fx:id="ds3" layoutX="164.0" layoutY="124.0" prefHeight="31.0" prefWidth="58.0" />
+      <Button fx:id="list_reservations_button" layoutX="234.0" layoutY="124.0" mnemonicParsing="false" onAction="#LoadListReservations" prefHeight="31.0" prefWidth="137.0" styleClass="button-form" text="List Reservations" />
+      <TextField fx:id="License_no" layoutX="61.0" layoutY="165.0" prefHeight="31.0" prefWidth="159.0" promptText="License no" />
+      <TextField fx:id="Creditcardnumber" layoutX="61.0" layoutY="205.0" prefHeight="31.0" prefWidth="159.0" promptText="Credit card number" />
+      <DatePicker fx:id="expirydate" layoutX="234.0" layoutY="205.0" prefHeight="31.0" prefWidth="137.0" promptText="Expiry" />
+      <ComboBox fx:id="cardtype" layoutX="234.0" layoutY="165.0" prefHeight="31.0" prefWidth="137.0" />
+      <Button layoutX="300.0" layoutY="271.0" mnemonicParsing="false" onAction="#Proceed" prefHeight="31.0" prefWidth="77.0" styleClass="button-form" text="Proceed" />
+      <Separator layoutX="13.0" layoutY="258.0" prefHeight="3.0" prefWidth="359.0" />
+      <Label fx:id="message" layoutX="8.0" layoutY="276.0" prefHeight="21.0" prefWidth="229.0" textFill="WHITE" />
+      <Button layoutX="240.0" layoutY="271.0" mnemonicParsing="false" onAction="#Reset" styleClass="button-form" text="Reset" />
+      <Pane fx:id="pane_confirmation" layoutX="4.0" layoutY="121.0" prefHeight="39.0" prefWidth="367.0">
+         <children>
+            <TextField fx:id="confirmation_number" layoutX="53.0" layoutY="3.0" prefHeight="31.0" prefWidth="165.0" promptText="Confirmation Number" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

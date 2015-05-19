@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+.manager_sidebar_black {
+    -fx-background-color: black;
+    -fx-text-fill:white;
+}
+
+.manager_sidebar_black:hover {
+    -fx-background-color: #FFCB00;
+    -fx-text-fill:black;
+}

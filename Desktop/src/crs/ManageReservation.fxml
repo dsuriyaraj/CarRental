@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="1057.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ManageReservationController">
+   <children>
+      <Separator layoutX="529.0" layoutY="70.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffdc1e" height="200.0" layoutY="93.0" stroke="WHITE" strokeType="INSIDE" width="31.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffdc1e" height="200.0" layoutX="1026.0" layoutY="93.0" stroke="WHITE" strokeType="INSIDE" width="31.0" />
+      <Separator layoutX="535.0" layoutY="70.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="6.0" />
+      <Pane fx:id="content_managereservation" layoutX="111.0" layoutY="44.0" prefHeight="331.0" prefWidth="387.0" />
+      <Button layoutX="686.0" layoutY="123.0" mnemonicParsing="false" onAction="#RentViaReservation" styleClass="menu-side-bar" text="Rent via Reservation">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="691.0" layoutY="217.0" mnemonicParsing="false" onAction="#CancelReservation" styleClass="menu-side-bar" text="Cancel Reservation">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="606.0" layoutY="160.0" prefHeight="21.0" prefWidth="245.0" styleClass="button-explanation" text="Covert an exiting reservation to rent" textFill="#b5adad" />
+      <Label layoutX="641.0" layoutY="255.0" prefHeight="21.0" prefWidth="203.0" styleClass="button-explanation" text="Cancel an existing reservation" textFill="#b5adad" />
+      <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="858.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/car-icon.JPG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="858.0" layoutY="217.0" prefHeight="52.0" prefWidth="64.0" style="-fx-background-color: #D9DBDA;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="52.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/Cancel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

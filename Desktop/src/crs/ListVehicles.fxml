@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="338.0" stylesheets="@../inc/screen2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.ListVehiclesController">
+   <children>
+      <TableView fx:id="tablevehicles" layoutX="8.0" layoutY="7.0" prefHeight="237.0" prefWidth="321.0">
+        <columns>
+          <TableColumn fx:id="Vlicense" prefWidth="115.0" text="Vlicense" />
+          <TableColumn fx:id="Name" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="Year" minWidth="0.0" prefWidth="100.0" text="Year" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

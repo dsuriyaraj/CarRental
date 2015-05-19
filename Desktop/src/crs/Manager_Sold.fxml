@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="866.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crs.Manager_SoldController">
+  <children>
+    <Pane id="soldPane" layoutX="0.0" layoutY="0.0" prefHeight="485.0" prefWidth="852.0">
+      <children>
+        <Button fx:id="soldButton" layoutX="714.0" layoutY="168.0" mnemonicParsing="false" onAction="#onSoldTo" prefHeight="31.0" prefWidth="70.0" text="Sold" />
+        <TableView fx:id="SoldTable" layoutX="14.0" layoutY="14.0" prefHeight="308.0000999999975" prefWidth="511.0" />
+        <TextField fx:id="input_sold_price" layoutX="617.0" layoutY="84.0" prefHeight="31.0" prefWidth="168.0" />
+        <TextField fx:id="input_sold_date" layoutX="617.0" layoutY="37.0" prefHeight="31.0" prefWidth="139.0" />
+        <TextField fx:id="input_sold_soldto" layoutX="616.0" layoutY="126.0" prefHeight="31.0" prefWidth="168.0" />
+        <Label layoutX="573.0" layoutY="87.0" text="Price">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.600" green="0.600" red="0.600" fx:id="x2" />
+          </textFill>
+        </Label>
+        <Label font="$x1" layoutX="562.0" layoutY="131.0" text="Sold to" textFill="$x2" />
+        <DatePicker fx:id="sold_datepicker" layoutX="133.0" layoutY="301.0" prefHeight="31.0" prefWidth="168.0" />
+        <Label fx:id="alert_sold" layoutX="714.0" layoutY="215.0" text="" visible="true" />
+        <Label id="alert_sold" font="$x1" layoutX="542.0" layoutY="42.0" text="Sold date" textFill="$x2" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

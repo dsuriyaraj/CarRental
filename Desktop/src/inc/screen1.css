@@ -1,0 +1,52 @@
+.root { -fx-focus-color: transparent; }
+
+.button {
+ -fx-background-color: #ffcb05;
+}
+
+.button:hover {
+ -fx-background-color: black;
+-fx-text-fill: white;
+-fx-border-width: 1.5;
+}
+
+.button-menu-bar {
+ -fx-background-color:  white;
+ -fx-text-fill: #999;
+ -fx-font-weight:  bold;
+ 
+}
+.button-menu-bar:hover {
+    -fx-underline:true;
+    -fx-text-fill: black;
+    -fx-border-color: white;
+}
+.menu-side-bar{
+-fx-background-color:#fbfbfb;
+-fx-border-color:#F8F8F8;
+}
+
+.button-explanation {
+    -fx-text-fill: #999;
+}
+
+.button-form {
+ -fx-background-color: #F3F3F3;
+ -fx-border-color:#F3F3F3;
+ -fx-border: none;
+}
+.menu-side-bar:hover {
+    -fx-text-fill: #999;
+    -fx-background-color:#fbfbfb;
+    -fx-border-color: white;
+}
+
+.combo-box {
+    -fx-border-color: #999;
+    -fx-font-size : 0.9em;
+   
+}
+
+#button-special {
+    // -fx-background-color:black;
+}

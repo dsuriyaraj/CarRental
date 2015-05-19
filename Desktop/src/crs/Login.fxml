@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="container" prefHeight="452.0" prefWidth="707.0" style="-fx-background-color: rgb(242,242,242);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crs.LoginController">
+   <children>
+      <Circle fill="#d9dbda" layoutX="155.0" layoutY="114.0" onMouseClicked="#Login_clerk" radius="63.0" stroke="#fcf9f9" strokeType="INSIDE" />
+      <Circle fill="#d9dbda" layoutX="336.0" layoutY="117.0" radius="71.0" stroke="#fffbfb" strokeType="INSIDE" />
+      <Circle fill="#d9dbda" layoutX="507.0" layoutY="117.0" onMouseClicked="#Login_admin" radius="67.0" stroke="#fcfafa" strokeType="INSIDE" />
+      <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="290.0" layoutY="71.0" onMouseClicked="#Login_manager" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/manager.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="56.0" layoutX="481.0" layoutY="59.0" onMouseClicked="#Login_admin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/sys-admin.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="84.0" layoutX="112.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../inc/clerk.JPG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="253.0" layoutY="228.0" style="-fx-border-color: white;" />
+      <PasswordField fx:id="password" layoutX="253.0" layoutY="285.0" style="-fx-border-color: white;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05121e" height="200.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#061422" height="200.0" layoutX="693.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+      <Pane layoutY="382.0" prefHeight="70.0" prefWidth="707.0" style="-fx-background-color: #F6BB53;">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="67.0" layoutX="26.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="16.0" text="CRS">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="212.0" layoutY="224.0" prefHeight="39.0" prefWidth="41.0" style="-fx-background-color: #F6BB53;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/user-enter.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="212.0" layoutY="281.0" prefHeight="39.0" prefWidth="41.0" style="-fx-background-color: #F6BB53;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inc/password.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="70.0" fitWidth="93.0" layoutX="107.0" layoutY="80.0" onMouseClicked="#Login_clerk" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="383.0" layoutY="333.0" mnemonicParsing="false" onAction="#goTomenu" style="-fx-background-color: #666;" text="Login" textFill="#f5f3f3">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Button>
+      <Label fx:id="Clerk" layoutX="136.0" layoutY="29.0" text="Clerk" textFill="#999999">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Manager" layoutX="307.0" layoutY="23.0" text="Manager" textFill="#999999">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Admin" layoutX="485.0" layoutY="29.0" text="Admin" textFill="#999999">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fail_login_message" layoutX="212.0" layoutY="338.0" prefHeight="21.0" prefWidth="165.0" />
+   </children>
+</Pane>

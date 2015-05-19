@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="1057.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crs.Manager_SetrateController">
+  <children>
+    <Pane id="setRatePane" layoutX="178.0" layoutY="25.0" prefHeight="381.0" prefWidth="701.0">
+      <children>
+        <TextField fx:id="hourly_rate" layoutX="122.0" layoutY="78.0" prefWidth="147.0" />
+        <Label layoutX="27.0" layoutY="83.0" text="Hourly Rate">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.600" green="0.600" red="0.600" fx:id="x2" />
+          </textFill>
+        </Label>
+        <TextField fx:id="daily_rate" layoutX="122.0" layoutY="133.0" prefWidth="147.0" />
+        <Label font="$x1" layoutX="35.0" layoutY="138.0" text="Daily Rate" textFill="$x2" />
+        <TextField fx:id="weekly_rate" layoutX="122.0" layoutY="191.0" prefWidth="147.0" />
+        <Label font="$x1" layoutX="27.0" layoutY="196.0" text="Weekly Rate" textFill="$x2" />
+        <Button fx:id="button_update_rate" layoutX="262.0" layoutY="324.0" mnemonicParsing="false" onAction="#on_button_update_rate" prefHeight="31.0" prefWidth="141.0" text="Update" />
+        <ComboBox fx:id="dropCategory_rate" layoutX="328.0" layoutY="19.0" onAction="#onCategory_rate" prefHeight="31.0" prefWidth="147.0" promptText="">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TextField id="hourly" fx:id="ins_hour" layoutX="386.0" layoutY="78.0" prefWidth="147.0" />
+        <Label font="$x1" layoutX="549.0" layoutY="83.0" text="Hourly Insurance" textFill="$x2" />
+        <TextField fx:id="ins_daily" layoutX="386.0" layoutY="133.0" prefWidth="147.0" />
+        <Label font="$x1" layoutX="547.0" layoutY="138.0" text="Daily Insurance" textFill="$x2" />
+        <TextField fx:id="ins_week" layoutX="386.0" layoutY="191.0" prefWidth="147.0" />
+        <Label font="$x1" layoutX="547.0" layoutY="196.0" text="Weekly Insurance" textFill="$x2" />
+        <TextField fx:id="per_km_rate" layoutX="122.0" layoutY="253.0" prefWidth="147.0" promptText="Per KM rate" />
+        <Button fx:id="button_save_rate" layoutX="265.0" layoutY="215.0" mnemonicParsing="false" onAction="#on_button_save_rate" prefHeight="31.0" prefWidth="124.0" text="Save" visible="false" />
+        <ComboBox fx:id="dropVType_rate" layoutX="171.0" layoutY="19.0" onAction="#onVtype_rate" prefHeight="31.0" prefWidth="141.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Label fx:id="alert_setrate" layoutX="432.0" layoutY="332.0" text="Label" visible="false" />
+        <Label font="$x1" layoutX="122.0" layoutY="24.0" text="Type" />
+        <Label font="$x1" layoutX="482.0" layoutY="24.0" text="Category" />
+        <Label font="$x1" layoutX="25.0" layoutY="254.0" text="Per KM Rate" textFill="$x2" />
+        <Label layoutX="389.0" layoutY="258.0" text="*Please click on Update to enable edit." />
+      </children>
+    </Pane>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="1.0" layoutY="90.0" stroke="#f8f8f8" strokeType="INSIDE" width="27.0">
+      <fill>
+        <Color blue="0.765" green="0.800" red="0.275" fx:id="x3" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="1030.0" layoutY="81.0" stroke="WHITE" strokeType="INSIDE" width="27.0" />
+  </children>
+</AnchorPane>
