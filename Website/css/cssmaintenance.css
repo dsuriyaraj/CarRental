@@ -1,0 +1,6 @@
+
+#wrapper { background-color: #D0D5D5; width: 860px; height: 1200px; margin: 0 auto;}
+#MaintenanceForm { font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;margin-left: 50px; padding: 0; }
+label{ display:block; width:140px; float:left;}
+h4 { font-size:15px; width: 700px; border-bottom: solid; border-width: 0.1px;}
+

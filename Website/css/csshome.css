@@ -1,0 +1,8 @@
+﻿#wrapper { background-color: #D0D5D5; width: 860px; height: 870px; margin: 0 auto;}
+ h3  { background: #808080; color: white; padding: 5px;} 
+#aboutus { width: 750px; padding: 5px; margin-left: 40px;}
+#aboutus h3 { text-align: center; }
+#Table1,#Table2,#Table3 { float: left; width: 200px; margin-right: 20px; margin-left: 50px; }
+#Table1 h3 ,#Table2 h3,#Table3 h3 { background: #808080; color: white; padding: 5px;} 
+#Table1 p, #Table2 p,#Table3 p {  padding: 5px;} 
+.clear { clear:both;}

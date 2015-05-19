@@ -1,0 +1,73 @@
+﻿.style1 {
+	font-size: xx-large;
+	color: #FFFFFF;
+}
+.style2 {
+	font-size: large;
+	color: #000080;
+}
+.style3 {
+	font-size: larger;
+	color: #FFFFFF;
+}
+.style4 {
+	font-size: x-large;
+	text-align: right;
+	}
+.style11 {
+	font-size: larger;
+	color: #000080;
+}
+.style12 {
+	font-size: x-large;
+}
+.style13 {
+	font-size: x-large;
+	color: #000080;
+}
+.style14 {
+	font-size: large;
+}
+.style15 {
+	text-align: left;
+}
+.style22 {
+	text-align: center;
+	color: #000000;
+}
+.style23 {
+	color: #000000;
+}
+.style24 {
+	color: #FFFFFF;
+}
+.auto-style1 {
+	text-align: left;
+	margin-top: 0px;
+}
+.auto-style2 {
+	margin-top: 75px;
+}
+.auto-style3 {
+	margin-top: 0px;
+}
+.auto-style4 {
+	text-align: center;
+	font-size: medium;
+	color: #FFFFFF;
+}
+.auto-style5 {
+	margin-left: 63px;
+}
+.auto-style6 {
+	font-size: large;
+	color: #FFFFFF;
+}
+.auto-style7 {
+	font-size: large;
+	text-align: left;
+}
+.auto-style8 {
+	color: #000080;
+}
+
